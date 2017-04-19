@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>APP发布平台</title>
+    <link rel="stylesheet" href="css/back.css">
+    <link rel="stylesheet" href="css/selectBox.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min862f.css?v=4.1.0" rel="stylesheet">
+  </head>
+  <body class="gray-bg">
+    <div class="page-header">
+      <h1><strong>APP发布平台</strong></h1>
+    </div>
+    <div class="panel panel-default">
+      <div class="center">
+        <label>操作系统:</label>
+        <select id="os" class="select_box">
+            <option>All</option>
+            <option>iOS</option>
+            <option>Android</option>
+        </select>
+        <label>环境:</label>
+        <select id="env" class="select_box">
+            <option>All</option>
+            <option>uat</option>
+            <option>beta</option>
+            <option>live</option>
+        </select>
+        <label>类型:</label>
+        <select id="mode" class="select_box">
+            <option>All</option>
+            <option>debug</option>
+            <option>release</option>
+        </select>
+        <button type="button" name="search" onclick="searchData()" class="btn btn-info" >查询</button>
+        <input type="reset" id="reset" name="" class="btn btn-defaul" onclick="clearSearchInfo()"value="清除">
+      </div>
+    </div>
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <!-- <button type="button" class="btn btn-primary btn-lg" style="text-shadow: black 5px 3px 3px;">
+          全部
+        </button>
+        <div class="row" id="info">
+        </div> -->
+        <!-- <hr/> -->
+        <button type="button" class="btn btn-primary btn-lg" style="text-shadow: black 5px 3px 3px;">
+          测试环境
+        </button>
+        <div class="row" id="uatinfo">
+        </div>
+        <hr/>
+        <button type="button" class="btn btn-primary btn-lg" style="text-shadow: black 5px 3px 3px;">
+          预发环境
+        </button>
+        <div class="row" id="betainfo">
+        </div>
+        <hr/>
+        <button type="button" class="btn btn-primary btn-lg" style="text-shadow: black 5px 3px 3px;">
+          线上环境
+        </button>
+        <div class="row" id="liveinfo">
+        </div>
+        <hr/>
+    </div>
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="js/content.min.js?v=1.0.0"></script>
+    <script src="js/appInfo.js"></script>
+    <script>
+        $(document).ready(function(){$(".contact-box").each(function(){animationHover(this,"pulse")})});
+    </script>
+  </body>
+  <!-- <script type="text/javascript" src="js/date.js"></script> -->
+</html>

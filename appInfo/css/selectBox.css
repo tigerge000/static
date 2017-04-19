@@ -1,0 +1,66 @@
+/*.con {
+	width:1000px;
+	margin:0 auto;
+}
+.con h1 {
+	text-align:center;
+	font-weight:normal;
+}
+h1,h2 {
+	font-weight:normal;
+	color:#0CC;
+	clear:both;
+}
+ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}*/
+
+
+.select_box {
+	margin:0 auto;
+	width:100px;
+	height:36px;
+	border:3px solid #3CF;
+	position:relative;
+	/*float:left;*/
+	margin-right:50px;
+}
+.select_box span {
+	display:inline-block;
+	width:200px;
+	height:36px;
+	line-height:36px;
+	cursor:pointer;
+	text-indent:10px;
+}
+.select_box .span_aa {
+	color:#C36;
+}
+.select_box ul {
+	width:200px;
+	position:absolute;
+	top:36px;
+	left:-1px;
+	border:1px solid #3CF;
+	display:none;
+	background:#fff;
+}
+.select_box li {
+	cursor:pointer;
+	line-height:36px;
+	text-indent:10px;
+}
+.select_box li:hover {
+	background:#39F;
+	color:#fff;
+}
+.select_box font {
+	position:absolute;
+	right:10px;
+	font-size:26px;
+	font-family:"微软雅黑";
+	color:#3CF;
+	transform:rotate(90deg);
+}
